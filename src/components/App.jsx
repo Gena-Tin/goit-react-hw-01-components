@@ -1,7 +1,9 @@
 import { Profile } from './Profile/Profile';
 import user from '../json/user.json';
 
-// import data from '../json/data.json';
+
+import { Statistics } from './Statistics/Statistics';
+import data from '../json/data.json';
 
 // import friends from '../json/friends.json';
 
@@ -9,16 +11,7 @@ import user from '../json/user.json';
 
 export const App = () => {
   return (
-    <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101',
-      // }}
-    >
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -27,8 +20,7 @@ export const App = () => {
         stats={user.stats}
       />
 
-      {/* <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} /> */}
+      <Statistics title="Upload stats" stats={data} />
 
       {/* <FriendList friends={friends} />; */}
 
