@@ -12,7 +12,7 @@ export const Statistics = ({ title, stats }) => {
           <li
             key={data.id}
             className={css.item}
-            style={{ background: bgColors[index] }}
+            style={{ backgroundColor: bgColors[index] }}
           >
             <span className={css.label}>{data.label}</span>
             <span className={css.percentage}>{data.percentage}%</span>
