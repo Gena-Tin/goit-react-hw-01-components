@@ -23,12 +23,12 @@
 }
 .online {
   composes: status;
-  background-color: green;
+  background-color: #01fc01;
   box-shadow: inset 0 0 6px 0 #000000;
 }
 .offline {
   composes: status;
-  background-color: red;
+  background-color: #ff0000;
   box-shadow: inset 0 0 6px 0 #000000;
   
 }
